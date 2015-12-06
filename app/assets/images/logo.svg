@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<html>
-<head>
-	<!-- Bootstrap --> 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
-
-  <title>Openhours</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
-  
-</head>
-<body>
-<div class= "container">
-	<div>
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729.91594 348.11177">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 729.91594 348.11177">
   <title>openhours4</title>
   <rect x="0.5" y="0.64509" width="164.06784" height="289.29157" style="stroke: #231f20;stroke-linecap: round;stroke-miterlimit: 10"/>
   <rect x="189" y="0.64509" width="164.06784" height="289.29157" style="stroke: #231f20;stroke-linecap: round;stroke-miterlimit: 10"/>
-  <g class="target" id ="lightSpeedIn">
+  <g>
     <polygon points="377.5 42.901 541.568 0.645 541.568 289.937 382.578 256.778 377.5 42.901" style="fill: #e90046"/>
     <polygon points="377.5 42.901 541.568 0.645 541.568 289.937 382.578 256.778 377.5 42.901" style="fill: none;stroke: #e90046;stroke-linecap: round;stroke-miterlimit: 10"/>
   </g>
@@ -39,15 +19,3 @@
     <path d="M754.54387,348.26025a2.15247,2.15247,0,0,0-2.33093-2.44824h-9.87474a2.15247,2.15247,0,0,0-2.33093,2.44824v4.89648c0,1.584.82236,2.08789,2.33093,2.44824l12.75484,2.87988c5.34809,1.22461,9.87474,4.6084,9.87474,10.36914v9.36133c0,6.04785-3.97749,10.22461-9.73769,10.22461H739.86927c-5.76021,0-9.73676-4.17676-9.73676-10.22461v-6.625h9.5997v4.6084a2.15312,2.15312,0,0,0,2.33186,2.44824h10.6971a2.15312,2.15312,0,0,0,2.33186-2.44824v-5.47266c0-1.584-.82328-2.08789-2.33186-2.44824l-12.75391-2.87988c-5.349-1.22461-9.87474-4.6084-9.87474-10.36914v-8.78418c0-6.04883,3.97655-10.22559,9.73676-10.22559h14.53754c5.76019,0,9.73769,4.17676,9.73769,10.22559v6.04785h-9.60063v-4.03223Zm6.17229,21.53027c0-3.52832-1.37152-5.40039-4.59426-6.26465l-16.1841-4.39258c-3.08568-.86426-4.18216-2.23242-4.18216-5.04v-6.84082c0-3.60059,1.91975-5.61621,5.34809-5.61621h12.2066c3.42833,0,5.34809,2.01563,5.34809,5.61621v0.86426h1.37152v-0.86426c0-4.46484-2.468-7.05664-6.71961-7.05664h-12.2066c-4.25161,0-6.7196,2.5918-6.7196,7.05664v6.84082c0,4.03223,1.71417,5.40039,5.55368,6.48047l16.1841,4.39258c2.468,0.64746,3.22274,2.44727,3.22274,4.82422v7.416c0,3.60059-1.92068,5.61719-5.349,5.61719h-13.029c-3.42833,0-5.34809-2.0166-5.34809-5.61719v-1.43945h-1.37152v1.43945c0,4.46484,2.468,7.05664,6.71961,7.05664h13.029c4.25161,0,6.72053-2.5918,6.72053-7.05664v-7.416Z" transform="translate(-39.70418 -40.32817)"/>
   </g>
 </svg>
-</div>
-
-
-<%= yield %>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</body>
-</html>
