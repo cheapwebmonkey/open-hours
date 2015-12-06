@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Statuses</h1>
-
+<h1>Is the Space Open?</h1>
+<div class="jumbotron">
 <table>
   <thead>
     <tr>
-      <th>Member Name</th>
+      <th>Who</th>
       <th>Space Status</th>
       <th colspan="3"></th>
     </tr>
@@ -16,14 +16,16 @@
       <tr>
         <td><%= status.name %></td>
         <td><%= human_boolean(status.space_status) %></td>
-        <td><%= link_to 'Show', status %></td>
-        <td><%= link_to 'Edit', edit_status_path(status) %></td>
+        
+        <td><button class="btn btn-default btn-lg" type="button"><%= link_to 'Show', status %></button></td>
+        <td><button class="btn btn-default btn-lg" type="button"><%= link_to 'Edit', edit_status_path(status) %></button></td>
         <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
-<%= link_to 'New Status', new_status_path %>
+<!-- #<%= link_to 'New Status', new_status_path %>
+ -->
