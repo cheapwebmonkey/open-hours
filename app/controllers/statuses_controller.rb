@@ -10,7 +10,7 @@ class StatusesController < ApplicationController
   # GET /statuses/1
   # GET /statuses/1.json
   def show
-    
+
   end
 
   # GET /statuses/new
@@ -29,8 +29,8 @@ class StatusesController < ApplicationController
 
     respond_to do |format|
       if @status.save
-        format.html { redirect_to @status, notice: 'Status was successfully created.' }
-        format.json { render :show, status: :created, location: @status }
+        format.html { redirect_to statuses_url, notice: 'Status was successfully created.' }
+        format.json { render :index, status: :created, location: statuses_url }
       else
         format.html { render :new }
         format.json { render json: @status.errors, status: :unprocessable_entity }
@@ -70,6 +70,6 @@ class StatusesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def status_params
-      params.require(:status).permit(:name, :space_status)
+      params.require(:status).permit(:name, :space_status, :hours)
     end
 end

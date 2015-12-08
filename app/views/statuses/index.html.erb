@@ -5,8 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>Who</th>
-      <th>Space Status</th>
+      <th>Member:</th>
+      <th>Space is:</th>
+      <th>Hours:</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,11 +16,9 @@
     <% @statuses.each do |status| %>
       <tr>
         <td><%= status.name %></td>
-        <td><%= human_boolean(status.space_status) %></td>
-        
-        <td><button class="btn btn-default btn-lg" type="button"><%= link_to 'Show', status %></button></td>
-        <td><button class="btn btn-default btn-lg" type="button"><%= link_to 'Edit', edit_status_path(status) %></button></td>
-        <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button class="btn btn-success btn-lg" type="button"><span class="glyphicon glyphicon-check" aria-hidden="true"></span><%= human_boolean(status.space_status) %></span></button></td>
+        <td><%= status.hours %></td>
+        <td><button class="btn btn-default btn-lg" type="button"><%= link_to 'I am leaving', status, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,5 +26,13 @@
 </div>
 <br>
 
-<!-- #<%= link_to 'New Status', new_status_path %>
- -->
+<div>
+<button class="btn btn-default btn-lg pull-right"><%= link_to 'Are You Here?', new_status_path %>
+</button>
+<p class ="ft-text">LVL1</p>
+<hr>
+</br>
+</div>
+
+
+ 

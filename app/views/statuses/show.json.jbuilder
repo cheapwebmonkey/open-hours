@@ -1,1 +1,1 @@
-json.extract! @status, :id, :name, :space_status, :created_at, :updated_at
+json.extract! @status, :id, :name, :space_status, :hours, :created_at, :updated_at

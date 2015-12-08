@@ -12,10 +12,8 @@
  *
  *= require_tree .
  *= require_self
-
-
+ *= require switchery
  */
-
 
  h1 { 
  	font-family: font-family: 'Poppins', sans-serif;
@@ -37,6 +35,11 @@
  	color: #ff3773;
  }
 
+.btn-success, .btn-success:focus,{
+	color: #73ff37;,
+	background: #73ff37;
+
+}
 .target {
     animation: lightSpeedIn 1.5s;
     -webkit-animation: lightSpeedIn 1.5s;
