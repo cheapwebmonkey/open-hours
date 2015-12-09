@@ -1,11 +1,13 @@
 body {
   background-color: #fff;
   color: #333;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 22px;
 }
 
 p, ol, ul, td,th {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 20px;
   padding: .75rem;
@@ -27,6 +29,7 @@ div {
 
 #notice {
   color: green;
+  font-family: 'Poppins', sans-serif;
 }
 
 .field_with_errors {
