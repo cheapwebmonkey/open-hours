@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.5.1'
 # Use mysql as the database for Active Record
 #gem 'mysql2', '~> 0.3.18'
 gem 'pg'
@@ -35,6 +35,10 @@ gem 'switchery-rails'
 gem 'paper_trail'
 
 gem 'bcrypt'
+
+gem 'geocoder'
+
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

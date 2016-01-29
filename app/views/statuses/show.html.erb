@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Memmber Name:</strong>
+  <strong>Member Name:</strong>
   <%= @status.name %>
 </p>
 
@@ -9,6 +9,7 @@
   <strong>Space Open:</strong>
   <%= @status.space_status %>
 </p>
+
 
 <%= link_to 'Edit', edit_status_path(@status) %> |
 <%= link_to 'Back', statuses_path %>

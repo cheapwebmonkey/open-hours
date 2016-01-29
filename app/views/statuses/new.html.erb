@@ -1,4 +1,12 @@
-<h1>New Status</h1>
+<div class = "row">
+  <div class ="col-md-8">
+  	<h1>Hours I will be here today are:</h1>
+  	<p>Please fill in your name, check the 'Open' box and fill in the hours when you will be in the sapce today.</p>
+  </div>
+  <div class="col-md-4">
+    <h2><%= Time.now.strftime("%m/%d/%Y") %></h2>
+  </div>
+</div>
 
 <%= render 'form' %>
 
