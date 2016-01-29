@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.1'
+gem 'rails', '4.2.4'
 # Use mysql as the database for Active Record
 #gem 'mysql2', '~> 0.3.18'
 gem 'pg'
