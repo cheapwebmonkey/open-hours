@@ -4,7 +4,7 @@
   	<p>Please fill in your name, check the 'Open' box and fill in the hours when you will be in the sapce today.</p>
   </div>
   <div class="col-md-4">
-    <h2><%= Time.now.strftime("%m/%d/%Y") %></h2>
+    <h2><%= Time.zone.now.strftime("%m/%d/%Y") %></h2>
   </div>
 </div>
 
