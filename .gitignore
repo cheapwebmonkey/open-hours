@@ -19,7 +19,7 @@
 .bundle/*
 !.bundle/config
 config/application.yml
-/app/assets/production.pem
+assets/production.pem
 
 
 ###############################################################################################
