@@ -1,6 +1,6 @@
 == README
 
-*This app is a proof of concept for hacker and makerspaces to broadcast when their space is open or nah. It uses Ruby 2.3.0 and Rails 4.2.4
+* This app is a proof of concept for hacker and makerspaces to broadcast when their space is open or nah. It uses Ruby 2.3.0 and Rails 4.2.4
 
 * Deployed to Heroku via GitHub at http://openhours.space
 
