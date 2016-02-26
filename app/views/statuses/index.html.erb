@@ -24,7 +24,7 @@
         <td><%= status.name %></td>
         <td><button class="btn btn-success btn-lg" type="button"><span class="glyphicon glyphicon-check" aria-hidden="true"></span><%= human_boolean(status.space_status) %></span></button></td>
         <td><%= status.hours %></td>
-        <td><button class="btn btn-default btn-lg" type="button"><%= link_to 'I am leaving', status, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        <td><%= link_to 'I am leaving', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -33,8 +33,12 @@
 <br>
 
 <div>
-<button class="btn btn-default btn-lg pull-right"><%= link_to 'Are You Here?', new_status_path %>
-</button>
+<%= link_to new_status_path do %>
+  <button class="btn btn-default btn-lg pull-right"><span class="glyphicon glyphicon-eye-open"></span>Are You Here?</button>
+
+<% end %>
+
+
 <p class ="ft-text">LVL1</p>
 <hr>
 </br>

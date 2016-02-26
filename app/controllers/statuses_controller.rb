@@ -10,7 +10,7 @@ class StatusesController < ApplicationController
   # GET /statuses/1
   # GET /statuses/1.json
   def show
-
+    @statuses = Status.all
   end
 
   # GET /statuses/new
@@ -55,12 +55,24 @@ class StatusesController < ApplicationController
   # DELETE /statuses/1
   # DELETE /statuses/1.json
   def destroy
-    @status.destroy
-    respond_to do |format|
-      format.html { redirect_to statuses_url, notice: 'Status was successfully destroyed.' }
-      format.json { head :no_content }
+    @status = Status.find(params[:id])
+    if @status.present?
+        @status.destroy
     end
+    redirect_to statuses_url
   end
+
+  # def destroy
+  #   respond_to do |format|
+  #     if @status.destroy
+  #     format.html { redirect_to root_url, notice: 'Status was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #     else
+  #       format.html { render :index }
+  #       format.json { render json: @status.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
